@@ -1,0 +1,10 @@
+{
+  "$schema": "./node_modules/ng-packagr/ng-package.schema.json",
+  "lib": {
+    "languageLevel": [
+      "dom",
+      "es2017"
+    ],
+    "entryFile": "src/app/app.module.ts"
+  }
+}
