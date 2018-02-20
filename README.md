@@ -11,7 +11,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 ## B extends A without constructor and super call
 look into dist/bundles/ctor-inheritance.umd.js
 
-Class A
+[Class A](src/app/component/a/a.component.ts)
 ``` javascript 
 /** @nocollapse */
 A.ctorParameters = function () { return [
@@ -20,7 +20,7 @@ A.ctorParameters = function () { return [
 ]; };
 ```
 
-Class B
+[Class B](src/app/component/b/b.component.ts#L9)
 ``` javascript
 /** @nocollapse */
 B.ctorParameters = function () { return []; };
@@ -30,7 +30,7 @@ results in class B *not* having providers `TestModel` and `ChangeDetectorRef`
 
 ## C extends A with constructor and super call
 
-Class C
+[Class C](src/app/component/c/c.component.ts#L10-L15)
 ``` javascript
 C.ctorParameters = function () { return [
     { type: core.ChangeDetectorRef, },
